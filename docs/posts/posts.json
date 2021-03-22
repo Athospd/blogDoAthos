@@ -32,5 +32,22 @@
     "preview": {},
     "last_modified": "2021-03-22T20:12:52-03:00",
     "input_file": "ttulo-do-meu-primeiro-post.utf8.md"
+  },
+  {
+    "path": "posts/2021-03-22-ttulo-do-meu-segundo-post/",
+    "title": "Título do Meu Segundo Post",
+    "description": "A short description of the post.",
+    "author": [
+      {
+        "name": "Nora Jones",
+        "url": "https://example.com/norajones"
+      }
+    ],
+    "date": "2021-03-22",
+    "categories": [],
+    "contents": "\nDistill is a publication format for scientific and technical writing, native to the web.\nLearn more about using Distill at https://rstudio.github.io/distill.\n\n\n\n",
+    "preview": {},
+    "last_modified": "2021-03-22T20:13:31-03:00",
+    "input_file": "ttulo-do-meu-segundo-post.utf8.md"
   }
 ]
