@@ -1,0 +1,97 @@
+---
+title: "Exemplo de Post Poliglota"
+description: |
+  Post que mostra que dá pra trabalhar com R Python SQL e etc no mesmo lugar com R Markdown.
+author:
+  - name: Athos Damiani
+    url: https://github.com/athospd
+    affiliation: Curso-R
+    affiliation_url: https://curso-r.com
+date: 03-22-2021
+output:
+  distill::distill_article:
+    self_contained: false
+    toc: true
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+Distill is a publication format for scientific and technical writing, native to the web.
+
+Learn more about using Distill at <https://rstudio.github.io/distill>.
+
+
+## Gráfico
+
+```{r}
+curve(dnorm, to = -3, from = 3)
+```
+
+## Código no R
+
+```{r, layout="l-body-outset"}
+library(rmarkdown)
+paged_table(mtcars)
+```
+
+## Código no Python
+
+```{python}
+import pandas as pd
+
+r.mtcars
+```
+
+```{python}
+obj_do_python = "alo mãe " + "to no python!"
+obj_do_python
+```
+
+## Código em SQL
+
+### Colocando uma tabelinha no SQLite
+
+```{r}
+library(DBI)
+library(dplyr)
+db <- dbConnect(RSQLite::SQLite(), dbname = "sql.sqlite")
+
+copy_to(db, mtcars)
+
+```
+
+### Fazendo uma consulta no SQLite
+
+```{sql, connection=db}
+SELECT * FROM mtcars
+```
+
+## Um mapinha
+
+```{r}
+library(leaflet)
+leaflet() %>%
+  addTiles() %>%  
+  addMarkers(lng=174.768, lat=-36.852, popup="Onde o R Nasceu")
+```
+
+
+## Um gráfico que mexe
+
+```{r}
+library(dygraphs)
+dygraph(ldeaths)
+```
+
+
+## Um plotly
+
+```{r}
+library(plotly)
+plot_ly(z = ~volcano) %>% 
+  add_surface()  
+```
+
