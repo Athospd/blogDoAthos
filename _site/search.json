@@ -1,0 +1,20 @@
+{
+  "articles": [
+    {
+      "path": "about.html",
+      "title": "About this blog",
+      "description": "Some additional details about the blog",
+      "author": [],
+      "contents": "\n\n\n\n",
+      "last_modified": "2021-03-22T19:55:41-03:00"
+    },
+    {
+      "path": "index.html",
+      "title": "Blog do Athos",
+      "author": [],
+      "contents": "\n\n\n\n",
+      "last_modified": "2021-03-22T19:57:03-03:00"
+    }
+  ],
+  "collections": ["posts/posts.json"]
+}
